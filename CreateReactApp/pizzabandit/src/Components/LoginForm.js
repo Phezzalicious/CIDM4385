@@ -1,7 +1,7 @@
 
 import React, { Component } from 'react';
-import EmailInput from './EmailInput';
-import PasswordInput from './PasswordInput';
+import * as EmailInput from './EmailInput';
+import * as PasswordInput from './PasswordInput';
 class LoginForm extends React.Component {
 
     //constructor

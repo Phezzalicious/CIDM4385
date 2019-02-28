@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactMapboxGl, { Layer, Feature } from 'react-mapbox-gl';
-import LoginForm from './Components/LoginForm';
+import * as LoginForm from './Components/LoginForm';
 
 import './App.css';
 
