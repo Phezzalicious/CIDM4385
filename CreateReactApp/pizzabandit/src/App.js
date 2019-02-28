@@ -70,15 +70,18 @@ class App extends Component {
   render() {
 
   //unpacking the object
-  const { lng, lat, zoom, mapstyle } = this.state;
+  const { lng, lat, zoom, mapstyle, formresults } = this.state;
 
 
     return (
       <div className="container">
+      <div className="container">
       <LoginForm onFormSubmit={this.handleFormSubmit} />
       <div>
-          {this.state.formresults}
+          {formresults}
       </div>
+      </div>
+      <div className="container">
 
                <div>{`Longitude: ${lng} Latitude: ${lat} Zoom: ${zoom}`}</div>
         <Map style={`mapbox://styles/mapbox/${mapstyle}-v9`}
@@ -93,6 +96,7 @@ class App extends Component {
                     <Feature coordinates={[lng, lat]}/>
              </Layer>
         </Map>
+      </div>
       </div>
     );
   }
