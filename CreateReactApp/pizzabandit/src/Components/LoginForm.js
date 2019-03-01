@@ -57,7 +57,7 @@ class LoginForm extends React.Component {
                 <form onSubmit={this.onSubmit}>
                     <EmailInput onEmailInputChange={this.onEmailChange} 
                                 test="dubs" />
-                    <PasswordInput />
+                    <PasswordInput onPassInputChange={this.onPassChange}/>
                     <button type="submit" 
                             className="btn btn-primary">Submit</button>
                 </form>
